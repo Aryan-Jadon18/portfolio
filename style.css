@@ -189,8 +189,8 @@ textarea {
   color: #ffffff;
   background: linear-gradient(to bottom, rgba(1, 1, 1, 0.8), hsl(217, 11%, 23%)), url(../../assets/svg/common-bg.svg);
   background-position: center;
-  height: 100vh;
-  min-height: 80rem;
+  height: 60vh;
+  min-height: 50rem;
   max-height: 120rem;
   position: relative; }
   @media only screen and (max-width: 37.5em) {
@@ -198,7 +198,7 @@ textarea {
       height: unset;
       min-height: unset; } }
   .home-hero__socials {
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%); }
     @media only screen and (max-width: 56.25em) {
@@ -503,21 +503,18 @@ textarea {
       @media only screen and (max-width: 37.5em) {
         .project-details__links-btn:last-child {
           margin: 0; } }
-.giphy{
-  padding-top: 500px;
-}
+
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   
   z-index: 1000;
-  background: #000;
-  background: rgb(0, 0, 0);
+  background: transparent;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
   .header__content {
     display: flex;
-    
+    backdrop-filter: blur(8px);
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5rem; }
@@ -626,6 +623,7 @@ textarea {
 
 .main-footer {
   background: #000;
+  
   color: #fff; }
   .main-footer__upper {
     display: flex;
